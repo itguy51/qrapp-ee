@@ -9,11 +9,8 @@
   <b>Content:</b>
   <%= @code.content %>
 </p>
-
-<p>
-  <b>Meta:</b>
-  <%= @code.meta %>
-</p>
+<img src="<%= @code.meta %>" alt="<%= @code.name %>"></img>
+<img src="https://chart.googleapis.com/chart?chs=512x512&cht=qr&chl=http%3A%2F%2Fqrcodes.joshpruim.com%2Fcodes%2F1<%= @code.id %>" alt="QR Code"></img>
 
 
 <%= link_to 'Edit', edit_code_path(@code) %> |
